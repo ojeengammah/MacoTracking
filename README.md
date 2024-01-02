@@ -19,10 +19,10 @@ Welcome to our Calorie Tracker App for Android! This application is designed to 
 We welcome contributions from the community! If you'd like to contribute, please fork the repository and use a feature branch. Pull requests are warmly welcome.
 
 ## Links
-- Repository: [your-repository-link]
-- Issue tracker: [your-issue-tracker-link]
+- Repository: https://github.com/ojeengammah/MacoTracking
+- Issue tracker: https://github.com/ojeengammah/MacoTracking/issues
   - In case of sensitive bugs like security vulnerabilities, please contact [your-email] directly instead of using the issue tracker. We value your effort to improve the security and privacy of this project!
 
 ## Licensing
-"The code in this project is licensed under [license-name] license."
+The code in this project is licensed under Apache License 2.0 license.
 ****
