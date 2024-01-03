@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="100dp"
+    android:layout_gravity="center">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="253dp"
+        android:layout_height="100dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/ic_launcher_background"
+        tools:layout_editor_absoluteX="-10dp"
+        tools:layout_editor_absoluteY="10dp" />
+
+    <TextView
+        android:id="@+id/textView_foodItem_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="ItemName"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_foodItem_servings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Servings#"
+        app:layout_constraintEnd_toStartOf="@+id/button_foodItem_edit"
+        app:layout_constraintTop_toTopOf="@+id/button_foodItem_edit" />
+
+    <TextView
+        android:id="@+id/textView_foodItem_calories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Calories#"
+        app:layout_constraintEnd_toEndOf="@+id/textView_foodItem_name"
+        app:layout_constraintStart_toStartOf="@+id/textView_foodItem_name"
+        app:layout_constraintTop_toBottomOf="@+id/textView_foodItem_name" />
+
+    <TextView
+        android:id="@+id/textView_foodItem_carbs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Carbs#"
+        app:layout_constraintEnd_toEndOf="@+id/textView_foodItem_calories"
+        app:layout_constraintStart_toStartOf="@+id/textView_foodItem_calories"
+        app:layout_constraintTop_toBottomOf="@+id/textView_foodItem_calories" />
+
+    <TextView
+        android:id="@+id/textView_foodItem_fat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Fat#"
+        app:layout_constraintEnd_toEndOf="@+id/textView_foodItem_servings"
+        app:layout_constraintStart_toStartOf="@+id/textView_foodItem_servings"
+        app:layout_constraintTop_toBottomOf="@+id/textView_foodItem_servings" />
+
+    <TextView
+        android:id="@+id/textView_foodItem_protein"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Protein#"
+        app:layout_constraintEnd_toEndOf="@+id/textView_foodItem_fat"
+        app:layout_constraintStart_toStartOf="@+id/textView_foodItem_fat"
+        app:layout_constraintTop_toBottomOf="@+id/textView_foodItem_fat" />
+
+    <Button
+        android:id="@+id/button_foodItem_delete"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="4dp"
+        android:text="X"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button_foodItem_edit"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="4dp"
+        android:text="E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

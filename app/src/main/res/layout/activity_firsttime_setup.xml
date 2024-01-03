@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="270dp"
+        android:layout_height="288dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/macromap_testlogo" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:maxLines="1"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewLogo" />
+
+    <EditText
+        android:id="@+id/editTextAge"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:hint="Age"
+        android:maxLines="1"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextName" />
+
+    <Spinner
+        android:id="@+id/dropdownSpinnerGender"
+        android:layout_width="270dp"
+        android:layout_height="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAge" />
+
+    <EditText
+        android:id="@+id/editTextHeight"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:hint="Height"
+        android:maxLines="1"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/dropdownSpinnerGender"
+        app:layout_constraintTop_toBottomOf="@+id/dropdownSpinnerGender" />
+
+    <EditText
+        android:id="@+id/editTextWeight"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:hint="Weight"
+        android:maxLines="1"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/editTextHeight"
+        app:layout_constraintTop_toBottomOf="@+id/editTextHeight" />
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="saveData"
+        android:text="Submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextWeight" />
+
+    <Button
+        android:id="@+id/buttonSkip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="#00000000"
+        android:onClick="skipSetup"
+        android:text="Skip >"
+        android:textColor="#FF000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/buttonHeight"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:text="ft in"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toEndOf="@+id/editTextHeight"
+        app:layout_constraintTop_toTopOf="@+id/editTextHeight" />
+
+    <Button
+        android:id="@+id/buttonWeight"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:text="lbs"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toEndOf="@+id/editTextWeight"
+        app:layout_constraintTop_toBottomOf="@+id/editTextHeight" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
