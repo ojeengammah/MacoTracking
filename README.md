@@ -10,7 +10,7 @@ Welcome to our Calorie Tracker App for Android! This application is designed to 
 - **User-Friendly Interface**: Developed using Android Studio, Java, and XML, the app boasts an intuitive interface that's optimized for a seamless mobile experience.
 
 ## Getting Started
-1. **Download the App**: Available on the Google Play Store.
+1. **Download the App**: Available on the Google Play Store. (coming up stay tuned)
 2. **Create an Account**: Quick and easy account setup.
 3. **Set Your Goals**: Enter your personal details to receive a customized calorie target.
 4. **Start Logging**: Begin tracking your food intake and monitor your progress.
